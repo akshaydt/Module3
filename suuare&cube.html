@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html>
+       <head>
+          <title>square & cube</title>
+             <script>
+                function display(val){
+                     document.getElementById("dis").value+=val;
+                                     }
+                   
+                function clr(){
+                     document.getElementById("dis").value= "";
+                            }          
+               function square(){
+                      var x=document.getElementById("dis").value;
+                      var y=eval(x*x);
+                     document.getElementById("dis").value=y;
+                               }
+               function cube(){
+                     var x=document.getElementById("dis").value;
+                     var y=eval(x*x*x);
+                     document.getElementById("dis").value=y;
+                            }  
+                </script>
+            </head>
+
+        <body>
+            <table border="1">
+                <tr>
+                  <td colspan="4"><input type="text" id="dis"></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><input type="button" value="Square" onclick="square()"></td>
+                  <td colspan="2"><input type="button" value="Cube" onclick="cube()"></td>
+                </tr>
+                <tr>
+                  <td colspan="4"><input type="button" value="Clear" onclick="clr()"></td>
+                </tr>
+            </table>
+        </body>
+    </html>
